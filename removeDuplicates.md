@@ -9,7 +9,7 @@
 * 只能在原数组空间修改 
 * 时间是常数
 
-(```)
+```
 public static int  removeDuplicates(int[] nums) {
             int k = 0;
             int l = nums.length;
@@ -21,4 +21,4 @@ public static int  removeDuplicates(int[] nums) {
             }
             return k+1;
         }
-(```)
+```
