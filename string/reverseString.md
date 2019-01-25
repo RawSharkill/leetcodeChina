@@ -4,5 +4,17 @@
 不要给另外的数组分配额外的空间，你必须原地修改输入数组、使用 O(1) 的额外空间解决这一问题。
 
 你可以假设数组中的所有字符都是 ASCII 码表中的可打印字符。
+# 思路：
+* 基本的交换策略
 
- 
+ ```
+  public static void reverseString(char[] s) {
+        int l=s.length;
+        for(int i=0;i<l/2;i++)
+        {
+            char t=s[i];
+            s[i]=s[l-i-1];
+            s[l-i-1]=t;
+        }
+    }
+```
